@@ -44,7 +44,7 @@ export const Logo = styled.div`
     align-items: center;
     gap: 1rem;
 
-    p {
+    a {
       font-size: 1.5rem;
     }
   }
@@ -54,8 +54,13 @@ export const Contact = styled.div`
   align-items: center;
   gap: 1.25rem;
 
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   @media (max-width: 768px) {
-    span {
+    a {
       display: none;
     }
     img {

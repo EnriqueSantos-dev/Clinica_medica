@@ -17,7 +17,9 @@ export function Header() {
       </C.Logo>
       <C.Contact>
         <img src={contactFig} alt='logo contact' />
-        <span>71 99765222</span>
+        <a href='https://web.whatsapp.com/' target='_blank'>
+          71 99765222
+        </a>
       </C.Contact>
     </C.Container>
   );

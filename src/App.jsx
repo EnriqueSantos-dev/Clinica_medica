@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import * as C from './App.styles';
 import man from './assets/man.png';
 import ConectarImgMan from './assets/homenconectar.png';
-import conectarBg from './assets/conectaBg.png';
 
 import { listItems } from './helpers/Items';
 
@@ -12,6 +11,15 @@ import Item from './components/Item/Item';
 import { ButtonSwitch } from './components/ButtonSwitch';
 import { GridItem } from './components/GridItem';
 import { FormContact } from './components/Form';
+
+import tablet from './assets/tablet.svg';
+import tv from './assets/tv.svg';
+import celularP from './assets/celularpequeno.svg';
+import celularPVar from './assets/celularPVAr.svg';
+import whatsapp from './assets/whatsapp.svg';
+import whatsappv2 from './assets/whatsappv2.svg';
+
+import logo from './assets/Logo.svg';
 
 function App() {
   const [shownItem, setShownItem] = useState(listItems);
@@ -133,10 +141,51 @@ function App() {
           <img src={ConectarImgMan} alt='' />
         </C.ConectarLeftSide>
         <C.ConectarRigthSide>
-          <img src={conectarBg} alt='' />
-          <h2>Conectar pessoas é a nossa missão.</h2>
+          <h2>
+            Conectar
+            <br />
+            pessoas
+            <br /> é a nossa
+            <br />
+            missão.
+          </h2>
         </C.ConectarRigthSide>
       </C.Conectar>
+      <C.ContactArea>
+        <div className='icons-contact-area'>
+          <img src={tablet} alt='' />
+          <img src={tv} alt='' />
+          <img src={celularP} alt='' />
+        </div>
+        <div className='content-contact-text'>
+          <p>
+            Contato rápido com necessidade de baixo conhecimento do paciente
+            para conexão, sem instalações de aplicativo, sem cadastros. Solicite
+            agora!
+          </p>
+        </div>
+        <a href='https://web.whatsapp.com/' target='_blank'>
+          <img src={whatsappv2} alt='' width={52} height={52} />
+          <span>71 99765222</span>
+        </a>
+      </C.ContactArea>
+      <C.Footer>
+        <div className='flex-footer'>
+          <img src={logo} alt='' />
+          <div className='content-footer-text'>
+            <p>Sistema de Teleatendimento | Criando conecções com vidas</p>
+            <div className='flex-icons-footer'>
+              <div className='icons-footer'>
+                <img src={celularPVar} alt='' height={29} />
+                <img src={whatsapp} alt='' />
+              </div>
+              <a href='https://web.whatsapp.com/' target='_blank'>
+                71 99765222
+              </a>
+            </div>
+          </div>
+        </div>
+      </C.Footer>
     </div>
   );
 }

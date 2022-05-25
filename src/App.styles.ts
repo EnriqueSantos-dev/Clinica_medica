@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Bg from './assets/bg.png';
+import conectarBg from './assets/conectaBg.png';
 
 export const Container = styled.div`
   width: 100%;
@@ -140,7 +141,7 @@ export const Conectar = styled.section`
 `;
 export const ConectarLeftSide = styled.div`
   flex: 1;
-  height: 800px;
+  height: auto;
   text-align: center;
   img {
     max-width: 100%;
@@ -148,16 +149,15 @@ export const ConectarLeftSide = styled.div`
 `;
 export const ConectarRigthSide = styled.div`
   flex: 1;
-  height: 800px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  background-image: url(${conectarBg});
+  background-position: center;
+  background-size: cover;
 
-  img {
-    max-width: 100%;
-  }
   h2 {
-    top: 50%;
-    transform: translateY(50%);
     position: absolute;
     font-family: 'Roboto';
     font-style: normal;
@@ -165,6 +165,103 @@ export const ConectarRigthSide = styled.div`
     font-size: 4.5rem;
     line-height: 5.25rem;
     color: #ffffff;
-    z-index: 1;
+  }
+`;
+export const ContactArea = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 120px;
+  padding-bottom: 10rem;
+  background-color: #3e1c69;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 2.6rem;
+
+  .icons-contact-area {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.8rem;
+    justify-content: center;
+  }
+  .content-contact-text {
+    color: #fff;
+    text-align: center;
+    max-width: 1108px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: 2.63rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 2.63rem;
+    position: absolute;
+
+    bottom: -2rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem 3rem 1rem 1.88rem;
+    background-color: #27ae60;
+    border-radius: 3.13rem;
+    color: #fff;
+  }
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 164px;
+  padding-bottom: 117px;
+
+  .flex-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 833px;
+    gap: 2rem;
+  }
+  .content-footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    color: #7b46be;
+
+    .flex-icons-footer {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      .icons-footer {
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #7b46be;
+      }
+    }
   }
 `;
