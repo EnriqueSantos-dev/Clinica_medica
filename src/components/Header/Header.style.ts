@@ -14,7 +14,6 @@ export const Container = styled.div`
 
   @media (max-width: 1600px) {
     max-width: 1200px;
-    padding: 0 1rem 0 1rem;
   }
   @media (max-width: 600px) {
     align-items: flex-start;
