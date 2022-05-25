@@ -15,7 +15,7 @@ import { FormContact } from './components/Form';
 import tablet from './assets/tablet.svg';
 import tv from './assets/tv.svg';
 import celularP from './assets/celularpequeno.svg';
-import celularPVar from './assets/celularPVAr.svg';
+import celularPVar from './assets/celularPvar.svg';
 import whatsapp from './assets/whatsapp.svg';
 import whatsappv2 from './assets/whatsappv2.svg';
 
