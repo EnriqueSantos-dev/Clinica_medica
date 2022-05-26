@@ -73,6 +73,7 @@ export function FormContact() {
           </div>
           <button>
             <img src={formSubmit ? formSubmitIcon : sendIcon} alt='' />
+            <span>Eu quero!</span>
           </button>
         </form>
       </C.ContainerForm>

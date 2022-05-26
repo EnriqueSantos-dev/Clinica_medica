@@ -8,6 +8,11 @@ export const Container = styled.div`
   flex-direction: column;
   margin-bottom: 11rem;
 
+  @media (max-width: 900px) {
+    margin-bottom: 1.5rem;
+    margin-top: -12rem;
+  }
+
   h3 {
     font-family: 'Oxygen';
     font-style: normal;
@@ -15,6 +20,19 @@ export const Container = styled.div`
     font-size: 1.25rem;
     line-height: 1.9rem;
     color: #fff;
+  }
+
+  @media (max-width: 900px) {
+    padding: 2rem 1.25rem;
+    background-color: #fff;
+
+    h3 {
+      color: #5f3595;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      text-align: center;
+      padding: 0 15rem;
+    }
   }
 `;
 
@@ -24,10 +42,9 @@ export const ContainerForm = styled.div`
     gap: 1rem;
     margin-top: 1.4rem;
   }
-  @media (max-width: 600) {
+  @media (max-width: 900px) {
     form {
       flex-direction: column;
-      background-color: #fff;
     }
   }
 
@@ -45,8 +62,8 @@ export const ContainerForm = styled.div`
     outline: 0;
     flex: 1;
 
-    @media (max-width: 600) {
-      background-color: #5f3595;
+    @media (max-width: 900px) {
+      background: #5f3595;
     }
   }
   input[type='text']::placeholder {
@@ -89,6 +106,12 @@ export const ContainerForm = styled.div`
     @media (max-width: 1600px) {
       font-size: 0.8rem;
     }
+
+    @media (max-width: 900px) {
+      position: relative;
+      bottom: -1px;
+      font-size: 1rem;
+    }
   }
   button {
     border-radius: 50%;
@@ -97,5 +120,29 @@ export const ContainerForm = styled.div`
     width: 4rem;
     height: 4rem;
     border: 0;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: #5f3595;
+
+    span {
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+      border-radius: 30px;
+      background-color: #f3cd37;
+      width: 100%;
+
+      img {
+        display: none;
+      }
+      span {
+        display: inline-block;
+      }
+    }
   }
 `;

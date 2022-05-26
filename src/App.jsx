@@ -141,14 +141,7 @@ function App() {
           <img src={ConectarImgMan} alt='' />
         </C.ConectarLeftSide>
         <C.ConectarRigthSide>
-          <h2>
-            Conectar
-            <br />
-            pessoas
-            <br /> é a nossa
-            <br />
-            missão.
-          </h2>
+          <h2>Conectar pessoas é a nossa missão.</h2>
         </C.ConectarRigthSide>
       </C.Conectar>
       <C.ContactArea>

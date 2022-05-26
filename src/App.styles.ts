@@ -17,8 +17,12 @@ export const Center = styled.div`
   max-width: 1440px;
   width: 100%;
   margin: auto;
+
   @media (max-width: 1600px) {
     max-width: 1200px;
+  }
+  @media (max-width: 900px) {
+    padding: 0 1.25rem;
   }
 `;
 export const Presentation = styled.div`
@@ -46,8 +50,8 @@ export const PresentationLeft = styled.div`
     color: #5f3595;
 
     @media (max-width: 900px) {
-      font-size: 2.5rem;
-      line-height: 3rem;
+      font-size: 2.8rem;
+      line-height: 3.2rem;
     }
   }
   h4 {
@@ -57,7 +61,7 @@ export const PresentationLeft = styled.div`
     font-weight: 300;
 
     @media (max-width: 900px) {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -121,6 +125,10 @@ export const FlexGridArea = styled.div`
   div:first-child {
     display: flex;
     margin: 1px;
+    flex-wrap: wrap;
+
+    @media (max-width: 900px) {
+    }
   }
 `;
 
@@ -130,14 +138,19 @@ export const Grid = styled.div`
   grid-gap: 3.3rem;
   grid-template-columns: repeat(3, 1fr);
 
-  @media (max-width: 990px) {
+  @media (max-width: 900px) {
     padding: 2rem 1.5rem;
     grid-gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 export const Conectar = styled.section`
   width: 100%;
   display: flex;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 export const ConectarLeftSide = styled.div`
   flex: 1;
@@ -145,6 +158,11 @@ export const ConectarLeftSide = styled.div`
   text-align: center;
   img {
     max-width: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 900px) {
+    flex: 2;
   }
 `;
 export const ConectarRigthSide = styled.div`
@@ -156,19 +174,33 @@ export const ConectarRigthSide = styled.div`
   background-image: url(${conectarBg});
   background-position: center;
   background-size: cover;
+  /* padding: 206px 194px 206px 346px; */
+  /* min-height: 168.95px; */
+
+  @media (max-width: 900px) {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding: 80px 94px 47px 90px;
+  }
 
   h2 {
-    position: absolute;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 4.5rem;
     line-height: 5.25rem;
     color: #ffffff;
+    max-width: 235px;
 
     @media (max-width: 1600px) {
       font-size: 3.3rem;
       line-height: 4.5rem;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      max-width: 200px;
     }
   }
 `;
@@ -204,6 +236,12 @@ export const ContactArea = styled.div`
     font-weight: 300;
     font-size: 2.25rem;
     line-height: 2.63rem;
+
+    @media (max-width: 900px) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 0 1.2rem;
+    }
   }
 
   a {
@@ -219,6 +257,19 @@ export const ContactArea = styled.div`
     background-color: #27ae60;
     border-radius: 3.13rem;
     color: #fff;
+
+    @media (max-width: 900px) {
+      padding: 0.8rem 2rem;
+      gap: 2rem;
+
+      span {
+        font-size: 1.8rem;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
   }
 `;
 
@@ -228,6 +279,11 @@ export const Footer = styled.footer`
   align-items: center;
   padding-top: 164px;
   padding-bottom: 117px;
+
+  @media (max-width: 900px) {
+    padding-left: 0 1.25rem;
+    padding-right: 0 1.25rem;
+  }
 
   .flex-footer {
     display: flex;
@@ -243,6 +299,7 @@ export const Footer = styled.footer`
     justify-content: center;
     flex-direction: column;
     gap: 1.25rem;
+    text-align: center;
 
     font-family: 'Dosis';
     font-style: normal;
@@ -250,6 +307,11 @@ export const Footer = styled.footer`
     font-size: 2.25rem;
     line-height: 3rem;
     color: #7b46be;
+
+    @media (max-width: 900px) {
+      font-size: 2rem;
+      line-height: 2.25rem;
+    }
 
     .flex-icons-footer {
       display: flex;

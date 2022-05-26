@@ -5,16 +5,18 @@ type PropType = {
   state: boolean;
 };
 export const Container = styled.div<PropType>`
-  flex: 1;
-  background-color: ${props => (props.state ? '#7B46BE' : '#5F3595')};
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
   padding: 111px 46px 94px 31px;
   gap: 2rem;
   position: relative;
   cursor: pointer;
   transition: 0.3s ease;
+
+  background-color: ${props => (props.state ? '#7B46BE' : '#5F3595')};
+
   &:after {
     content: '';
     display: ${props => (props.state ? 'block' : 'none')};
@@ -38,5 +40,9 @@ export const Container = styled.div<PropType>`
     font-size: 1.1rem;
     color: #fff;
     text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    padding: 100px;
   }
 `;

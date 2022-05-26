@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 0 auto 6.8rem auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   font-family: 'Dosis', sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
@@ -15,9 +15,10 @@ export const Container = styled.div`
   @media (max-width: 1600px) {
     max-width: 1200px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     align-items: flex-start;
     margin: 0 auto 3rem auto;
+    padding: 0 1.25rem;
   }
 `;
 
@@ -29,8 +30,9 @@ export const Menu = styled.div`
     border: 0;
     background: none;
   }
-  @media (max-width: 768px) {
-    display: block;
+  @media (max-width: 900px) {
+    display: flex;
+    align-items: flex-start;
   }
 `;
 export const Logo = styled.div`
@@ -38,10 +40,11 @@ export const Logo = styled.div`
   align-items: center;
   gap: 4rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    flex: 1;
 
     a {
       font-size: 1.5rem;
@@ -58,7 +61,9 @@ export const Contact = styled.div`
     cursor: pointer;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
+    justify-content: flex-end;
+
     a {
       display: none;
     }

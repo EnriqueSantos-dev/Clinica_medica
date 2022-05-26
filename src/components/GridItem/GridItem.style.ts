@@ -29,6 +29,14 @@ export const Container = styled.div`
 
   @media (max-width: 990px) {
     padding: 4.5rem 0.8rem 3.9rem 0.8rem;
+
+    span {
+      left: 0.8rem;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
   }
 `;
 
