@@ -39,9 +39,9 @@ export const ContainerForm = styled.div`
     font-size: 1rem;
     font-family: 'Oxygen';
     font-style: normal;
+    font-weight: 400;
     line-height: 1.5;
     color: #fff;
-    font-weight: 400;
     outline: 0;
     flex: 1;
 
@@ -51,6 +51,44 @@ export const ContainerForm = styled.div`
   }
   input[type='text']::placeholder {
     color: #fff;
+  }
+  .input-number {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    input {
+      width: 100%;
+      color: #fff;
+      transition: all 0.1s ease;
+    }
+    input::placeholder {
+      color: #fff;
+    }
+  }
+
+  .input-number.error input {
+    border-color: #ff8181;
+    color: #ff8181;
+  }
+  .input-number.error input::placeholder {
+    color: #ff8181;
+  }
+  .input-number.error span {
+    position: absolute;
+    bottom: -2.25rem;
+    color: #ff8181;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    @media (max-width: 1600px) {
+      font-size: 0.8rem;
+    }
   }
   button {
     border-radius: 50%;

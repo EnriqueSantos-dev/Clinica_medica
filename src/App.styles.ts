@@ -165,6 +165,11 @@ export const ConectarRigthSide = styled.div`
     font-size: 4.5rem;
     line-height: 5.25rem;
     color: #ffffff;
+
+    @media (max-width: 1600px) {
+      font-size: 3.3rem;
+      line-height: 4.5rem;
+    }
   }
 `;
 export const ContactArea = styled.div`
